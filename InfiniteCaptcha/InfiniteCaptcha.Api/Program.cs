@@ -31,7 +31,7 @@ builder.Services.AddRateLimiter(options =>
     options.AddFixedWindowLimiter("fixed", opt =>
     {
         opt.Window = TimeSpan.FromMinutes(1);
-        opt.PermitLimit = 10;
+        opt.PermitLimit = 50;
         opt.QueueLimit = 0;
     });
 
