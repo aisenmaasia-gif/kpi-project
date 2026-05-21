@@ -17,7 +17,7 @@ builder.Services.AddCors(options =>
     options.AddPolicy("ProductionPolicy", policy =>
     {
         policy.WithOrigins(
-                "https://kpi-captcha-game.onrender.com/",
+                "https://kpi-captcha-game.onrender.com",
                 "http://localhost:5215/",
                 "https://localhost:7215/"
               )
