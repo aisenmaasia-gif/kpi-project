@@ -19,7 +19,7 @@ else
 {
     builder.Services.AddScoped(sp =>
     {
-        var client = new HttpClient { BaseAddress = new Uri("https://kpi-project-i7n6.onrender.com/") };
+        var client = new HttpClient { BaseAddress = new Uri("https://kpi-project-1.onrender.com") };
         client.DefaultRequestHeaders.Add("X-API-KEY", "SuperSecretKpiKey2026!");
         return client;
     });
